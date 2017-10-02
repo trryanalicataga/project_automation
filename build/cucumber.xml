@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.535865">
+<testcase classname="Test Google" name="Able to access Google" time="0.535865">
+<failure message="java.lang.IllegalStateException: The driver executable does not exist: /projects/automation_template/project_automation/config/cucumber-config/chromedriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:199)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116)&#10;&#9;at tooltwist.utils.DriverManager.getDriver(DriverManager.java:53)&#10;&#9;at tooltwist.utils.TestInit.&lt;init&gt;(TestInit.java:31)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)&#10;&#9;at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)&#10;&#9;at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)&#10;&#9;at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)&#10;&#9;at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)&#10;&#9;at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)&#10;&#9;at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)&#10;&#9;at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)&#10;&#9;at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)&#10;&#9;at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)&#10;&#9;at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)&#10;&#9;at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)&#10;&#9;at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)&#10;&#9;at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)&#10;&#9;at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)&#10;&#9;at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)&#10;&#9;at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)&#10;&#9;at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)&#10;&#9;at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)&#10;&#9;at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)&#10;&#9;at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)&#10;&#9;at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:299)&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#10;&#9;at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)&#10;&#9;at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)&#10;&#9;at cucumber.runtime.Runtime.run(Runtime.java:121)&#10;&#9;at cucumber.api.cli.Main.run(Main.java:36)&#10;&#9;at cucumber.api.cli.Main.main(Main.java:18)&#10;&#9;at ✽.Given I access Google site, {serverUrl}(regressiontest/TestGoogle.feature:26)&#10;"><![CDATA[Given I access Google site, {serverUrl}.....................................failed
+Then I should be navigated to Google site...................................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable does not exist: /projects/automation_template/project_automation/config/cucumber-config/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
+	at tooltwist.utils.DriverManager.getDriver(DriverManager.java:53)
+	at tooltwist.utils.TestInit.<init>(TestInit.java:31)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:121)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+	at ✽.Given I access Google site, {serverUrl}(regressiontest/TestGoogle.feature:26)
+]]></failure>
+</testcase>
+</testsuite>
