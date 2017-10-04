@@ -1,6 +1,5 @@
 package tooltwist.utils;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -8,13 +7,16 @@ import java.util.Properties;
 public class TestDataConfigUtil {
 	private InputStream input = null;
 	private Properties prop = null;
+	private static Properties testdata = null;
+	
+	
 
 	private TestDataConfigUtil() {
-		prop = new Properties();
-
+		testdata = new Properties();
 		try {
-			input = new FileInputStream("../project-automation-conf/testdata.properties");
-			prop.load(input);
+			input = getClass().getClassLoader().getResourceAsStream("testdata.properties");
+			testdata.load(input);
+			testdata.getProperty("slHomePage");
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		} finally {
@@ -26,17 +28,20 @@ public class TestDataConfigUtil {
 				}
 			}
 		}
+
+		
 	}
 
 	public String getConfig(String configName) {
-		return prop.getProperty(configName) == null ? "" : prop.getProperty(configName);
+		return testdata.getProperty(configName) == null ? "" : testdata.getProperty(configName);
 	}
 
 	private static class TestDataConfigLazyHolder {
-		private static final TestDataConfigUtil instance = new TestDataConfigUtil();
+		public static final TestDataConfigUtil instance = new TestDataConfigUtil();
 	}
 
 	public static TestDataConfigUtil getTestDataConfig() {
 		return TestDataConfigLazyHolder.instance;
 	}
+
 }

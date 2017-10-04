@@ -6,7 +6,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import tooltwist.pageObjects.SL_StudentProfilePageObject;
-import tooltwist.pageObjects.TestEmailRyePageObject;
 import tooltwist.utils.ElementUtil;
 import tooltwist.utils.TestInit;
 

@@ -15,7 +15,7 @@ public class SL_CheckVersionNumberPageObject extends ObjectReference{
 	private WebDriver driver = null;
 	private ElementUtil elementUtil = null;
 	private TestInit ti = null;
-	private static final Logger logger = LoggerFactory.getLogger(TestEmailRyePageObject.class);
+	private static final Logger logger = LoggerFactory.getLogger(SL_CheckVersionNumberPageObject.class);
 
 	public SL_CheckVersionNumberPageObject(TestInit ti) {
 		this.driver = ti.getDriver();

@@ -24,7 +24,6 @@ public class TestInit {
 	private TestDataConfigUtil config = null;
 	private String environmentUrl = "";
 	private UserCredentials userCredentials;
-	private String googleURL = "";
 	
 	public TestInit() throws Exception { 
 		System.out.println(">>>>>>>>>>>>>>>>>>>> Initializing TestInit <<<<<<<<<<<<<<<<<<<<");
@@ -89,11 +88,6 @@ public class TestInit {
 	public UserCredentials getUserCredentials() {
 		return userCredentials;
 	}
-
-	public String getGoogleURL() {
-		return googleURL=this.config.getConfig("myURL");
-	}
-
 
 	
 }

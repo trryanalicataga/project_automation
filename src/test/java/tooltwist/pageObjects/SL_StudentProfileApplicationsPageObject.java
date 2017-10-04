@@ -13,7 +13,7 @@ public class SL_StudentProfileApplicationsPageObject extends ObjectReference {
 	private WebDriver driver = null;
 	private ElementUtil elementUtil = null;
 	private TestInit ti = null;
-	private static final Logger logger = LoggerFactory.getLogger(TestEmailRyePageObject.class);
+	private static final Logger logger = LoggerFactory.getLogger(SL_StudentProfileApplicationsPageObject.class);
 
 	public SL_StudentProfileApplicationsPageObject(TestInit ti) {
 		this.driver = ti.getDriver();
