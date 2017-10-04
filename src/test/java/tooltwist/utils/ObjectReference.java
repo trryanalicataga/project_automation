@@ -57,7 +57,7 @@ public class ObjectReference {
 	public static String dev_SL_PROFILE_COUNTRY = "//*[@id='select_value_label_1']";
 	public static String dev_SL_PROFILE_PHONENUMBER = "//*[@id='input_22']";
 	public static String dev_SL_PROFILE_TRAVELALONE = "//*[@id='radio_25']"; 
-	public static String dev_SL_PROFILE_MOSTRECENTPROGRAM = "//*[@id='radio_27']";//*[@id="radio_27"]
+	public static String dev_SL_PROFILE_MOSTRECENTPROGRAM = "//*[@id='radio_27']/div[1]";//*[@id="radio_27"]
 	public static String dev_SL_PROFILE_MOSTRECENTLEVELEDUC = "//*[@id='radio_38']";
 	public static String dev_SL_PROFILE_YEARCOMPLETED = "//*[@id='select_value_label_2']";
 	public static String dev_SL_PROFILE_WORKEDAFTERSTUDIES = "//*[@id='radio_43']";

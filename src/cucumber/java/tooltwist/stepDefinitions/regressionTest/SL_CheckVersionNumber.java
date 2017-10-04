@@ -11,6 +11,7 @@ import tooltwist.utils.ElementUtil;
 import tooltwist.utils.TestInit;
 
 public class SL_CheckVersionNumber {
+	//public WebDriver driver =  null;
 	public WebDriver driver =  null;
 	public ElementUtil elementUtil = null;
 	public SL_CheckVersionNumberPageObject checkVersionNumberPageObject = null;
