@@ -1,4 +1,5 @@
 .DS_Store
-.classpath
 .gradle/2.0/taskArtifacts/*
 .settings/*
+*.class
+.classpath
