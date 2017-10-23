@@ -9,6 +9,7 @@ import tooltwist.utils.ElementUtil;
 import tooltwist.utils.TestInit;
 
 public class SL_ApplicationHistory {
+	//test changes
 	public WebDriver driver =  null;
 	public ElementUtil elementUtil = null;
 	public SL_ApplicationHistoryPageObject sL_ApplicationHistoryPageObject = null;
