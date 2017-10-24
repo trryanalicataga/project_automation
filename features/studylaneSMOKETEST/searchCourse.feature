@@ -1,4 +1,4 @@
-
+#includes course compare feature
 Feature: Search
 
 Scenario: Anyone should be able to search for courses

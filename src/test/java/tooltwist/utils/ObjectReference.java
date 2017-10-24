@@ -83,4 +83,11 @@ public class ObjectReference {
 	//dev_studylane_homepage
 	public static String dev_SL_SEARCHFIELD = "//*[@id='i_search_course']";
 	public static String dev_SL_SEARCHBUTTON = "//*[@id='search-form']/div[1]/div[1]/div[3]/a/button";
+	//dev_studylane_searchresults
+	public static String dev_SL_SHORTLISTBUTTON = "/html/body/div[3]/div[2]/div/course-search-manager/div/course-search-result/div/div[2]/ul/li[1]/div[1]/div[3]/div[2]/button";
+	public static String dev_SL_SHORTLISTBUTTON1 = "/html/body/div[3]/div[2]/div/course-search-manager/div/course-search-result/div/div[2]/ul/li[2]/div[1]/div[3]/div[2]/button";
+	public static String dev_SL_SHORTLIST = "//*[@id='saved-courses-container-override']/slick/div/div/div[1]/div/div";
+	public static String dev_SL_SHORTLIST1 = "//*[@id='saved-courses-container-override']/slick/div/div/div[2]/div/div";
+	public static String dev_SL_COMPARE = "//*[@id='saved-courses-buttons-container-override']/div/div/div[1]/button";
+	public static String dev_SL_ENTEREMAILFIELD = "//*[@id='auto-focus-on-load']/div[3]/div/div";
 }
