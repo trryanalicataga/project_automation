@@ -65,7 +65,9 @@ public class ObjectReference {
 	public static String dev_SL_PROFILE_ATTACHFILE = "//*[@id='document-upload-button']";
 	public static String dev_SL_PROFILE_UPDATE = "//*[@id='submit-button']";
 	public static String dev_SL_PROFILE_SUCCESS_UPDATE = "/html/body/div[11]/md-dialog";
-	//*[@id="select_99"]
+	public static String dev_SL_LOGINPANEL = "/html/body/div[3]/div[1]/table/tbody/tr[5]/td/div/table/tbody/tr/td[2]/table/tbody/tr/td[5]/div/div[1]";
+	public static String dev_SL_LOGOUTBUTTON = "/html/body/div[3]/div[1]/table/tbody/tr[5]/td/div/table/tbody/tr/td[2]/table/tbody/tr/td[5]/div/div[4]/div/div/div[2]";
+	public static String dev_SL_LOGINFORM = "/html/body/div[3]/div[4]/div/div/div/div/div/div";
 	//dev_studylane_myAgent
 	public static String dev_SL_AGENT = "/html/body/div[3]/div[3]/div/div[1]/div/div[2]/a[3]";
 	public static String dev_SL_AGENT_DETAILS = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div";
