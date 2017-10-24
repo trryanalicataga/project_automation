@@ -90,4 +90,46 @@ public class ObjectReference {
 	public static String dev_SL_SHORTLIST1 = "//*[@id='saved-courses-container-override']/slick/div/div/div[2]/div/div";
 	public static String dev_SL_COMPARE = "//*[@id='saved-courses-buttons-container-override']/div/div/div[1]/button";
 	public static String dev_SL_ENTEREMAILFIELD = "//*[@id='auto-focus-on-load']/div[3]/div/div";
+	//dev_studylane_courseApplication
+	public static String dev_SL_PROFILE_FIRSTNAMEc = "//*[@id='student-form-personal-details']/div[1]/div[1]/div/div/input[2]";
+	public static String dev_SL_PROFILE_LASTNAMEc = "//*[@id='student-form-personal-details']/div[1]/div[2]/div/div/input";
+	public static String dev_SL_PROFILE_DATEc = "//*[@id='student-form-personal-details']/div[2]/div";
+	public static String dev_SL_PROFILE_GENDERc = "//*[@id='student-form-personal-details']/div[3]/div/div[2]/div/input[2]";
+	public static String dev_SL_PROFILE_DATETIMEPICKERc = "";
+	public static String dev_SL_PROFILE_PASSPORTNUMc = "//*[@id='student-form-passport-details']/div[1]/div[1]/div/div/input";
+	public static String dev_SL_PROFILE_PLACEOFISSUEc = "//*[@id='student-form-passport-details']/div[2]/div[1]/div/div/input";
+	public static String dev_SL_PROFILE_DATEOFISSUEc = "//*[@id='student-form-passport-details']/div[1]/div[2]";
+	public static String dev_SL_PROFILE_EXPIRYDATEc = "//*[@id='student-form-passport-details']/div[2]/div[2]";
+	public static String dev_SL_PROFILE_NATIONALITYc = "//*[@id='student-form-passport-details']/div[3]/div[1]/div/div/div[1]/a";
+	public static String dev_SL_PROFILE_PLACEOFBIRTHc = "//*[@id='student-form-passport-details']/div[3]/div[2]/div/div/input";
+	public static String dev_SL_PROFILE_STREETADDRESS1c = "//*[@id='student-form-contact-details']/div[1]/div/div/div/input";
+	public static String dev_SL_PROFILE_STREETADDRESS2c = "//*[@id='student-form-contact-details']/div[2]/div/div/div/input";
+	public static String dev_SL_PROFILE_CITYc = "//*[@id='student-form-contact-details']/div[3]/div[1]/div/div/input";
+	public static String dev_SL_PROFILE_STATEPROVREGIONc = "//*[@id='student-form-contact-details']/div[3]/div[2]/div/div/input";
+	public static String dev_SL_PROFILE_POSTALZIPCODEc = "//*[@id='student-form-contact-details']/div[4]/div[1]/div/div/input";
+	public static String dev_SL_PROFILE_COUNTRYc = "";
+	public static String dev_SL_PROFILE_PHONENUMBERc = "//*[@id='student-form-contact-details']/div[5]/div[1]/div/div/input";
+	public static String dev_SL_PROFILE_TRAVELALONEc = "//*[@id='student-form-contact-details']/div[7]/div/div[1]/div/div/div/label[1]/input"; 
+	public static String dev_SL_PROFILE_MOSTRECENTLEVELEDUCc = "//*[@id='student-form-base-academic-details']/div[3]/div[1]/div[1]/div/div[1]/div[1]/label/input";//*[@id="radio_27"]
+	public static String dev_SL_PROFILE_MOSTRECENTPROGRAMc = "//*[@id='student-form-base-academic-details']/div[1]/div/div[1]/div[2]/div/input[1]";
+	public static String dev_SL_PROFILE_YEARCOMPLETEDc = "//*[@id='student-form-base-academic-details']/div[4]/div/div/div/select";
+	public static String dev_SL_PROFILE_WORKEDAFTERSTUDIESc = "//*[@id='student-employment-details']/div[1]/div/div[1]/div[2]/div/label[2]/input";
+	public static String dev_SL_PROFILE_ICONFIRMc = "//*[@id='student-declaration-details']/div[2]/div[1]/div/div[1]/input";
+	public static String dev_SL_PROFILE_FULLNAMEc = "//*[@id='student-declaration-details']/div[2]/div[2]/div/div/input";
+	public static String dev_SL_PROFILE_DATEDECLARATIONc = "//*[@id='student-declaration-details']/div[2]/div[3]/div/div/input";
+	public static String dev_SL_PROFILE_SUCCESS_SUBMITc = "//*[@id='submit-button']";
+	public static String dev_SL_PROFILE_EMAILADDRESSc = "//*[@id='student-form-contact-details']/div[5]/div[2]/div/div/input";
+	//dev_courseApplicationAccordion
+	public static String dev_SL_CONTACT_DETAILS = "/html/body/div[3]/div[3]/div/div/div[2]/div/div/div[4]/form/div[3]";
+	public static String dev_SL_PASSPORT_DETAILS = "/html/body/div[3]/div[3]/div/div/div[2]/div/div/div[4]/form/div[2]";
+	public static String dev_SL_ACADEMIC_DETAILS = "/html/body/div[3]/div[3]/div/div/div[2]/div/div/div[4]/form/div[4]";
+	public static String dev_SL_PROFESSIONAL_DETAILS = "/html/body/div[3]/div[3]/div/div/div[2]/div/div/div[4]/form/div[5]";
+	public static String dev_SL_DECLARATION = "/html/body/div[3]/div[3]/div/div/div[2]/div/div/div[4]/form/div[6]";
+	//dev_studylane_comparePage
+	public static String dev_SL_COMPAREPAGE_APPLY = "/html/body/div[3]/div[2]/div/course-search-manager/div/course-compare/div[2]/div/div[1]/table[1]/tbody/tr[9]/td[2]";
+	public static String dev_SL_SCS = "/html/body/div[3]/div[2]/div/course-search-manager/div/course-search-shortlist/div/div[2]/md-toolbar/div/div/div[2]/a[2]";
+	public static String dev_SL_SCS_apply = "//*[@id='saved-courses-buttons-container-override']/div/div/div[2]/button/span[1]";
+	//dev_agent_selection_process
+	public static String dev_SL_AGENTSELECTION = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[1]/div/input";
+	public static String dev_SL_PROCEED = "//*[@id='agent-selection-tpl-container']/div[4]/div[2]/button";
 }
