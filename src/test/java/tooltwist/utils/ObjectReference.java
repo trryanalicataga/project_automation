@@ -78,4 +78,9 @@ public class ObjectReference {
 	public static String dev_SL_APPLICATION_STATHISTORY2 = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div[2]/div/student-application/form/div/div[3]/div[2]/div/a";
 	public static String dev_SL_APPLICATION_STATHISTORY3 = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div[2]/div/student-application/form/div/div[4]/div[2]/div/a";
 	public static String dev_SL_APPLICATION_STATUSHISTORYVIEW = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div[2]/div/student-application/form/div/div[5]";
+	//dev_studylane_header
+	public static String dev_SL_LOGO = "/html/body/div[3]/div[1]/table/tbody/tr[5]/td/div/table/tbody/tr/td[1]/table/tbody/tr/td[3]/a/img";
+	//dev_studylane_homepage
+	public static String dev_SL_SEARCHFIELD = "//*[@id='i_search_course']";
+	public static String dev_SL_SEARCHBUTTON = "//*[@id='search-form']/div[1]/div[1]/div[3]/a/button";
 }
