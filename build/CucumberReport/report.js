@@ -1,243 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("regressiontest/GoogleEmailRye.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Google Email",
-  "description": "",
-  "id": "google-email",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "line": 3,
-  "name": "I should be able to visit Gmail",
-  "description": "",
-  "id": "google-email;i-should-be-able-to-visit-gmail",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 4,
-  "name": "I accessed gmail",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "I check the email field",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "I should be able to type on it",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TestEmailRye.i_accessed_gmail()"
-});
-formatter.result({
-  "duration": 7423323746,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestEmailRye.i_check_the_email_field()"
-});
-formatter.result({
-  "duration": 72324681,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestEmailRye.i_should_be_able_to_type_on_it()"
-});
-formatter.result({
-  "duration": 59454227957,
-  "error_message": "java.lang.AssertionError: //*[@id\u003d\u0027gb\u0027]/div[1]/div[1]/div[2]/div[4]/div[1]/a/span is not available.\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat tooltwist.utils.ElementUtil.isElementAvailabe(ElementUtil.java:109)\n\tat tooltwist.pageObjects.TestEmailRyePageObject.typeInEmailField(TestEmailRyePageObject.java:59)\n\tat tooltwist.stepDefinitions.regressionTest.TestEmailRye.i_should_be_able_to_type_on_it(TestEmailRye.java:36)\n\tat ✽.Then I should be able to type on it(regressiontest/GoogleEmailRye.feature:6)\n",
-  "status": "failed"
-});
-formatter.uri("regressiontest/TestGoogle.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 1,
-      "value": "#Author: your.email@your.domain.com"
-    },
-    {
-      "line": 2,
-      "value": "#Keywords Summary :"
-    },
-    {
-      "line": 3,
-      "value": "#Feature: List of scenarios."
-    },
-    {
-      "line": 4,
-      "value": "#Scenario: Business rule through list of steps with arguments."
-    },
-    {
-      "line": 5,
-      "value": "#Given: Some precondition step"
-    },
-    {
-      "line": 6,
-      "value": "#When: Some key actions"
-    },
-    {
-      "line": 7,
-      "value": "#Then: To observe outcomes or validation"
-    },
-    {
-      "line": 8,
-      "value": "#And,But: To enumerate more Given,When,Then steps"
-    },
-    {
-      "line": 9,
-      "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
-    },
-    {
-      "line": 10,
-      "value": "#Examples: Container for s table"
-    },
-    {
-      "line": 11,
-      "value": "#Background: List of steps run before each of the scenarios"
-    },
-    {
-      "line": 12,
-      "value": "#\"\"\" (Doc Strings)"
-    },
-    {
-      "line": 13,
-      "value": "#| (Data Tables)"
-    },
-    {
-      "line": 14,
-      "value": "#@ (Tags/Labels):To group Scenarios"
-    },
-    {
-      "line": 15,
-      "value": "#\u003c\u003e (placeholder)"
-    },
-    {
-      "line": 16,
-      "value": "#\"\""
-    },
-    {
-      "line": 17,
-      "value": "## (Comments)"
-    },
-    {
-      "line": 19,
-      "value": "#Sample Feature Definition Template"
-    }
-  ],
-  "line": 21,
-  "name": "Test Google",
-  "description": "I want to use this template for my feature file",
-  "id": "test-google",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 20,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "line": 25,
-  "name": "Able to access Google",
-  "description": "",
-  "id": "test-google;able-to-access-google",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 24,
-      "name": "@tag1"
-    }
-  ]
-});
-formatter.step({
-  "line": 26,
-  "name": "I access Google site, \u003curl\u003e",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 27,
-  "name": "I should be navigated to Google site",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 29,
-  "name": "",
-  "description": "",
-  "id": "test-google;able-to-access-google;",
-  "rows": [
-    {
-      "cells": [
-        "url"
-      ],
-      "line": 30,
-      "id": "test-google;able-to-access-google;;1"
-    },
-    {
-      "cells": [
-        "{serverUrl}"
-      ],
-      "line": 31,
-      "id": "test-google;able-to-access-google;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 31,
-  "name": "Able to access Google",
-  "description": "",
-  "id": "test-google;able-to-access-google;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 20,
-      "name": "@tag"
-    },
-    {
-      "line": 24,
-      "name": "@tag1"
-    }
-  ]
-});
-formatter.step({
-  "line": 26,
-  "name": "I access Google site, {serverUrl}",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 27,
-  "name": "I should be navigated to Google site",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "{serverUrl}",
-      "offset": 22
-    }
-  ],
-  "location": "TestGoogle.i_access_Google_site_www_google_com_ph(String)"
-});
-formatter.result({
-  "duration": 4739542994,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestGoogle.i_should_be_navigated_to_Google_site()"
-});
-formatter.result({
-  "duration": 52353308,
-  "status": "passed"
-});
-formatter.uri("studylaneSMOKETEST/applicationHistory.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("studylaneSMOKETEST/applicationHistory.feature");
 formatter.feature({
   "line": 1,
   "name": "Application History",
@@ -294,16 +55,15 @@ formatter.match({
   "location": "SL_StudentProfile.i_am_in_studylane_homepage()"
 });
 formatter.result({
-  "duration": 15982430768,
-  "status": "passed"
+  "duration": 148750155,
+  "error_message": "java.lang.ExceptionInInitializerError\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n\tat ✽.Given I am in studylane homepage(studylaneSMOKETEST/applicationHistory.feature:4)\nCaused by: java.lang.NullPointerException\n\tat java.util.Properties$LineReader.readLine(Properties.java:434)\n\tat java.util.Properties.load0(Properties.java:353)\n\tat java.util.Properties.load(Properties.java:341)\n\tat tooltwist.utils.TestDataConfigUtil.\u003cinit\u003e(TestDataConfigUtil.java:18)\n\tat tooltwist.utils.TestDataConfigUtil.\u003cinit\u003e(TestDataConfigUtil.java:7)\n\tat tooltwist.utils.TestDataConfigUtil$TestDataConfigLazyHolder.\u003cclinit\u003e(TestDataConfigUtil.java:40)\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "SL_StudentProfileApplications.i_clicked_My_Applications_from_the_menu()"
 });
 formatter.result({
-  "duration": 453486027664,
-  "error_message": "java.lang.AssertionError: /html/body/div[3]/div[3]/div/div[1]/div/div[2]/a[2] is not available.\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat tooltwist.utils.ElementUtil.isElementAvailabe(ElementUtil.java:109)\n\tat tooltwist.utils.ElementUtil.isClickedElementAvailable(ElementUtil.java:87)\n\tat tooltwist.pageObjects.SL_StudentProfileApplicationsPageObject.visitApplications(SL_StudentProfileApplicationsPageObject.java:25)\n\tat tooltwist.stepDefinitions.regressionTest.SL_StudentProfileApplications.i_clicked_My_Applications_from_the_menu(SL_StudentProfileApplications.java:27)\n\tat ✽.When I clicked My Applications from the menu(studylaneSMOKETEST/applicationHistory.feature:6)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SL_StudentProfileApplications.i_should_be_redirected_my_My_Applications_page()"
@@ -358,8 +118,8 @@ formatter.match({
   "location": "SL_CheckVersionNumber.the_guest_is_on_the_studylane_home_page()"
 });
 formatter.result({
-  "duration": 2513792809,
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome\u003d61.0.3163.100)\n  (Driver info: chromedriver\u003d2.29.461585 (0be2cd95f834e9ee7c46bcc7cf405b483f5ae83b),platform\u003dMac OS X 10.12.0 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 329 milliseconds\nBuild info: version: \u00272.52.0\u0027, revision: \u00274c2593cfc3689a7fcd7be52549167e5ccc93ad28\u0027, time: \u00272016-02-11 11:22:43\u0027\nSystem info: host: \u0027Hudsonian.local\u0027, ip: \u002710.0.16.63\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.12\u0027, java.version: \u00271.8.0_92\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.29.461585 (0be2cd95f834e9ee7c46bcc7cf405b483f5ae83b), userDataDir\u003d/var/folders/_j/hkpwx5710pq8s4vtfxcp6f780000gp/T/.org.chromium.Chromium.lJ2mNF}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d61.0.3163.100, platform\u003dMAC, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 4e5d9916d6337997926fd217775e2e27\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:100)\n\tat org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:92)\n\tat com.sun.proxy.$Proxy10.get(Unknown Source)\n\tat tooltwist.pageObjects.SL_CheckVersionNumberPageObject.visitStudylane(SL_CheckVersionNumberPageObject.java:27)\n\tat tooltwist.stepDefinitions.regressionTest.SL_CheckVersionNumber.the_guest_is_on_the_studylane_home_page(SL_CheckVersionNumber.java:27)\n\tat ✽.Given the guest is on the studylane home page(studylaneSMOKETEST/checkVersionNumber.feature:5)\n",
+  "duration": 376190,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class tooltwist.utils.TestDataConfigUtil$TestDataConfigLazyHolder\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n\tat ✽.Given the guest is on the studylane home page(studylaneSMOKETEST/checkVersionNumber.feature:5)\n",
   "status": "failed"
 });
 formatter.match({
@@ -442,9 +202,380 @@ formatter.match({
   "location": "SL_SignUp.i_am_in_studylane_sign_up_page()"
 });
 formatter.result({
-  "duration": 5690151771,
-  "status": "passed"
+  "duration": 406622,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class tooltwist.utils.TestDataConfigUtil$TestDataConfigLazyHolder\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n\tat ✽.Given I am in studylane sign up page(studylaneSMOKETEST/signUp.feature:5)\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "SL_SignUp.i_filled_out_all_the_required()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_SignUp.validations_for_each_field_should_display_if_left_blank()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_SignUp.i_click_Create_Account_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_SignUp.i_should_be_redirected_to_studylane_login_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_SignUp.i_should_be_able_to_login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.uri("studylaneSMOKETEST/studentProfile.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Student Profile",
+  "description": "",
+  "id": "student-profile",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "A student wants to view his profile",
+  "description": "",
+  "id": "student-profile;a-student-wants-to-view-his-profile",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "I am in studylane homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 5,
+      "value": "#homepageURL"
+    }
+  ],
+  "line": 6,
+  "name": "I clicked my profile from the menu",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I should be redirected to studylane student profile page",
+  "keyword": "Then "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 8,
+      "value": "#studentProfileURL"
+    }
+  ],
+  "line": 9,
+  "name": "The following details should be displayed",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SL_StudentProfile.i_am_in_studylane_homepage()"
+});
+formatter.result({
+  "duration": 392050,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class tooltwist.utils.TestDataConfigUtil$TestDataConfigLazyHolder\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n\tat ✽.Given I am in studylane homepage(studylaneSMOKETEST/studentProfile.feature:4)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "SL_StudentProfile.i_clicked_my_profile_from_the_menu()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_StudentProfile.i_should_be_redirected_to_studylane_student_profile_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_StudentProfile.the_following_details_should_be_displayed()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.uri("studylaneSMOKETEST/studentProfileAgent.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Student Profile Agent",
+  "description": "",
+  "id": "student-profile-agent",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "A student wants to view his agent\u0027s profile",
+  "description": "",
+  "id": "student-profile-agent;a-student-wants-to-view-his-agent\u0027s-profile",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "I am in studylane homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 5,
+      "value": "#homepageURL"
+    }
+  ],
+  "line": 6,
+  "name": "I clicked my agent from the menu",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I should be redirected to studylane agent profile page",
+  "keyword": "Then "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 8,
+      "value": "#agentProfileURL"
+    }
+  ],
+  "line": 9,
+  "name": "The following details should be displayedz",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SL_StudentProfile.i_am_in_studylane_homepage()"
+});
+formatter.result({
+  "duration": 400919,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class tooltwist.utils.TestDataConfigUtil$TestDataConfigLazyHolder\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n\tat ✽.Given I am in studylane homepage(studylaneSMOKETEST/studentProfileAgent.feature:4)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "SL_StudentProfileAgent.i_clicked_my_agent_from_the_menu()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_StudentProfileAgent.i_should_be_redirected_to_studylane_agent_profile_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_StudentProfileAgent.the_following_details_should_be_displayedz()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.uri("studylaneSMOKETEST/studentProfileApplications.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Student Application",
+  "description": "",
+  "id": "student-application",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "A student wants to view his application status",
+  "description": "",
+  "id": "student-application;a-student-wants-to-view-his-application-status",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "I am in studylane homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 5,
+      "value": "#studentAccountDashboard"
+    }
+  ],
+  "line": 6,
+  "name": "I clicked My Applications from the menu",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I should be redirected my My Applications page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SL_StudentProfile.i_am_in_studylane_homepage()"
+});
+formatter.result({
+  "duration": 523135,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class tooltwist.utils.TestDataConfigUtil$TestDataConfigLazyHolder\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n\tat ✽.Given I am in studylane homepage(studylaneSMOKETEST/studentProfileApplications.feature:4)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "SL_StudentProfileApplications.i_clicked_My_Applications_from_the_menu()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_StudentProfileApplications.i_should_be_redirected_my_My_Applications_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.uri("studylaneSMOKETEST/studentProfileUpdateDetails.feature");
+formatter.feature({
+  "line": 1,
+  "name": "My Profile",
+  "description": "",
+  "id": "my-profile",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "A student wants to update his details",
+  "description": "",
+  "id": "my-profile;a-student-wants-to-update-his-details",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "I am in studylane homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 5,
+      "value": "#myApplicationsPage"
+    }
+  ],
+  "line": 6,
+  "name": "I edit the details in my profile",
+  "keyword": "When "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 7,
+      "value": "#profileDetails"
+    }
+  ],
+  "line": 8,
+  "name": "I click on the submit button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "The details I added should reflect in My Profile",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SL_StudentProfile.i_am_in_studylane_homepage()"
+});
+formatter.result({
+  "duration": 491927,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class tooltwist.utils.TestDataConfigUtil$TestDataConfigLazyHolder\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n\tat ✽.Given I am in studylane homepage(studylaneSMOKETEST/studentProfileUpdateDetails.feature:4)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "SL_StudentProfileUpdate.i_edit_the_details_in_my_profile()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_StudentProfileUpdate.i_click_on_the_submit_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_StudentProfileUpdate.the_details_I_added_should_reflect_in_My_Profile()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.uri("studylaneSMOKETEST/studylaneHealthCheck.feature");
+formatter.feature({
+  "line": 1,
+  "name": "studylane Health Check",
+  "description": "",
+  "id": "studylane-health-check",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "All SL connection should be healthy",
+  "description": "",
+  "id": "studylane-health-check;all-sl-connection-should-be-healthy",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
+  "name": "I am on the studylane healthcheck url",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 6,
+      "value": "#studylanehealthCheckURL"
+    }
+  ],
+  "line": 7,
+  "name": "I check the values in the page",
+  "keyword": "When "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 8,
+      "value": "#healthCheckStatus - value"
+    }
+  ],
+  "line": 9,
+  "name": "The values should be one",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SL_HealthCheck.i_am_on_the_studylane_healthcheck_url()"
+});
+formatter.result({
+  "duration": 409965,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class tooltwist.utils.TestDataConfigUtil$TestDataConfigLazyHolder\n\tat tooltwist.utils.TestDataConfigUtil.getTestDataConfig(TestDataConfigUtil.java:44)\n\tat tooltwist.utils.TestInit.\u003cinit\u003e(TestInit.java:30)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)\n\tat org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)\n\tat org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)\n\tat org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)\n\tat org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)\n\tat org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)\n\tat org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)\n\tat org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)\n\tat org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)\n\tat org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)\n\tat org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)\n\tat org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)\n\tat cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:37)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.runtime.Runtime.run(Runtime.java:121)\n\tat cucumber.api.cli.Main.run(Main.java:36)\n\tat cucumber.api.cli.Main.main(Main.java:18)\n\tat ✽.Given I am on the studylane healthcheck url(studylaneSMOKETEST/studylaneHealthCheck.feature:5)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "SL_HealthCheck.i_check_the_values_in_the_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "SL_HealthCheck.the_values_should_be_one()"
+});
+formatter.result({
+  "status": "skipped"
+});
 });

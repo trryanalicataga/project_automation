@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"features/studylaneSMOKETEST/studentProfile.feature"},
+		features = {"features/studylaneSMOKETEST/studentProfileUpdateDetails.feature"},
 		glue = {"tooltwist.stepDefinitions.regressionTest", "tooltwist.stepDefinitions.smokeTest"},
 		monochrome = true
 

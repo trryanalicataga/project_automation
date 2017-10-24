@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -162,20 +163,21 @@ public class SL_StudentProfileUpdatePageObject extends ObjectReference {
 		Assert.assertTrue("Unable to travel alone.",elementUtil.isClickedElementAvailable(dev_SL_PROFILE_TRAVELALONE));
 		logger.info("Travel alone has been updated.");
 		
+		Thread.sleep(5000);
+		
 //		Assert.assertTrue("Unable to sex change.",elementUtil.isClickedElementAvailable(dev_SL_PROFILE_GENDER));
 //		logger.info("Gender has been updated.");
 		
-//		Assert.assertTrue("Unable to update Recent Program.",elementUtil.isClickedElementAvailable(dev_SL_PROFILE_MOSTRECENTPROGRAM));
-//		logger.info("Recent Program has been updated.");
+		Assert.assertTrue("Unable to update Recent Program.",elementUtil.isClickedElementAvailable(dev_SL_PROFILE_MOSTRECENTPROGRAM));
+		logger.info("Recent Program has been updated.");
 		
 //		WebElement radioBtn3 = driver.findElement(By.xpath(dev_SL_PROFILE_MOSTRECENTPROGRAM));
 //		((JavascriptExecutor) driver).executeScript("arguments[0].checked = true;", radioBtn3);
 		
-		JOptionPane.showMessageDialog(null, "Choose a travelling alone option now. 5 seconds");
-		Thread.sleep(5000);
+//		Assert.assertTrue("Unable to update Recent Level Educ.",elementUtil.isClickedElementAvailable(dev_SL_PROFILE_MOSTRECENTPROGRAM));
+//		logger.info("Recent Level Educ has been updated.");
 		
-		Assert.assertTrue("Unable to update Recent Level Educ.",elementUtil.isClickedElementAvailable(dev_SL_PROFILE_MOSTRECENTLEVELEDUC));
-		logger.info("Recent Level Educ has been updated.");
+
 		
 		WebElement element2= driver.findElement(By.xpath(dev_SL_PROFILE_YEARCOMPLETED));
 		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
@@ -183,22 +185,30 @@ public class SL_StudentProfileUpdatePageObject extends ObjectReference {
 		logger.info("Pick a year to close the dropdown now... 3 seconds.");
 		Thread.sleep(3000);
 		
+		Thread.sleep(3000);
+		
 		Assert.assertTrue("Unable to update Worked after studies",elementUtil.isClickedElementAvailable(dev_SL_PROFILE_WORKEDAFTERSTUDIES));
 		logger.info("Worked after studies has been updated.");
 		
-		WebElement element3= driver.findElement(By.xpath(dev_SL_PROFILE_DOCUMENTTYPE));
-		JavascriptExecutor executor3 = (JavascriptExecutor) driver;
-		executor3.executeScript("arguments[0].click();", element3);
-		logger.info("Pick a document type to close the dropdown now... 3 seconds.");
 		Thread.sleep(3000);
 		
-		WebElement element4= driver.findElement(By.xpath(dev_SL_PROFILE_ATTACHFILE));
-		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
-		logger.info("Pick a document to close the window now... 5 seconds.");
-		Thread.sleep(5000);
+//		WebElement element3= driver.findElement(By.xpath(dev_SL_PROFILE_DOCUMENTTYPE));
+//		JavascriptExecutor executor3 = (JavascriptExecutor) driver;
+//		executor3.executeScript("arguments[0].click();", element3);
+//		logger.info("Pick a document type to close the dropdown now... 3 seconds.");
+//		Thread.sleep(3000);
+//		
+//		WebElement element4= driver.findElement(By.xpath(dev_SL_PROFILE_ATTACHFILE));
+//		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
+//		logger.info("Pick a document to close the window now... 5 seconds.");
+//		Thread.sleep(5000);
 		
 		Assert.assertTrue("Unable to update profile",elementUtil.isClickedElementAvailable(dev_SL_PROFILE_UPDATE));
-		logger.info("Profile details has been updated.");
+		logger.info("Update button has been clicked.");
+		
+		Assert.assertTrue("Update profile failed",elementUtil.isElementAvailabe(dev_SL_PROFILE_SUCCESS_UPDATE));
+		logger.info("Profile has been successfully updated.");
+
 		
 		
 //		Select oSelect = new Select(driver.findElement(By.xpath(dev_SL_PROFILE_NATIONALITY)));
