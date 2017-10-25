@@ -1,6 +1,7 @@
 package tooltwist.pageObjects;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +23,7 @@ public class SL_StudentProfileAgentPageObject extends ObjectReference {
 	}
 
 	public void visitAgent() throws InterruptedException {
-		elementUtil.isClickedElementAvailable(dev_SL_AGENT);
+		driver.findElement(By.xpath(dev_SL_AGENT)).click();
 		Thread.sleep(2000);
 		
 	}

@@ -19,6 +19,8 @@ public class SL_ApplicationHistory {
 		this.elementUtil = ti.getElementUtil();
 		this.sL_ApplicationHistoryPageObject = new SL_ApplicationHistoryPageObject(ti);
 	}
+	
+	
 	@When("^I click status history from the application card$")
 	public void i_click_status_history_from_the_application_card() throws Throwable {
 		sL_ApplicationHistoryPageObject.clickStatusHistory();

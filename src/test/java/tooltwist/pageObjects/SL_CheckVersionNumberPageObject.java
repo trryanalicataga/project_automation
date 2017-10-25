@@ -23,13 +23,17 @@ public class SL_CheckVersionNumberPageObject extends ObjectReference{
 		this.ti = ti;
 	}
 
-	public void visitStudylane() {
+	public void visitStudylane() throws InterruptedException {
 		driver.get("https://dev.studylane.com.au");
+		logger.info("Scroll down now.");
+		Thread.sleep(1000);
 		
 	}
 
 	public void checkBuildText() throws InterruptedException {
+		Thread.sleep(2000);
 		Assert.assertTrue("Build version is not displayed.",elementUtil.isElementAvailabe(dev_SL_BV));
+		logger.info("Check 1.");
 		WebElement txt= driver.findElement(By.xpath(dev_SL_BV));
 		logger.info("Build version is displayed");
 		System.out.println(txt.getText());

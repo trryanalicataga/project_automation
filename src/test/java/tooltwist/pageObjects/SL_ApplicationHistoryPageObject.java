@@ -24,6 +24,7 @@ public class SL_ApplicationHistoryPageObject extends ObjectReference {
 	}
 
 	public void clickStatusHistory() throws InterruptedException {
+		
 		elementUtil.isClickedElementAvailable(dev_SL_APPLICATION_STATHISTORY);
 		logger.info("Status history 1 is clicking.");
 		Thread.sleep(2000);
@@ -33,10 +34,11 @@ public class SL_ApplicationHistoryPageObject extends ObjectReference {
 		elementUtil.isClickedElementAvailable(dev_SL_APPLICATION_STATHISTORY3);
 		logger.info("Status history 3 is clicking.");
 		Thread.sleep(2000);
+		
 	}
 
 	public void viewStatusHistory() throws InterruptedException {
-		Assert.assertTrue("Password field is not available", elementUtil.isElementAvailabe(dev_SL_APPLICATION_STATUSHISTORYVIEW));
+		Assert.assertTrue("Status history is not available", elementUtil.isElementAvailabe(dev_SL_APPLICATION_STATUSHISTORYVIEW));
 		logger.info("Status history is displayed properly.");
 	}
 	

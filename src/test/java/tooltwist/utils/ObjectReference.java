@@ -13,7 +13,7 @@ public class ObjectReference {
 	public static String SIGNIN_ISSUCC = "//*[@id='gb']/div[1]/div[1]/div[2]/div[4]/div[1]/a/span";
 	
 	//dev_studylane_build_verification
-	public static String dev_SL_BV = "/html/body/div[3]/div[8]/table/tbody/tr[2]/td/div/div/div[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/span/p/span";
+	public static String dev_SL_BV = "/html/body/div[3]/div[9]/table/tbody/tr[2]/td/div/div/div[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/span/p/span";
 	//dev_studylane_signUpFields
 	public static String dev_SL_SIGNUP_FNAME = "/html/body/div[3]/div[4]/div/div/div/div/form/div/div[5]/div/div[1]/input";
 	public static String dev_SL_SIGNUP_LNAME = "/html/body/div[3]/div[4]/div/div/div/div/form/div/div[6]/div/div[1]/input";
@@ -69,11 +69,11 @@ public class ObjectReference {
 	public static String dev_SL_LOGOUTBUTTON = "/html/body/div[3]/div[1]/table/tbody/tr[5]/td/div/table/tbody/tr/td[2]/table/tbody/tr/td[5]/div/div[4]/div/div/div[2]";
 	public static String dev_SL_LOGINFORM = "/html/body/div[3]/div[4]/div/div/div/div/div/div";
 	//dev_studylane_myAgent
-	public static String dev_SL_AGENT = "/html/body/div[3]/div[3]/div/div[1]/div/div[2]/a[3]";
+	public static String dev_SL_AGENT = "/html/body/div[3]/div[3]/div/div[1]/div/div[1]/a[3]";
 	public static String dev_SL_AGENT_DETAILS = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div";
 	//dev_studylane_myApplications
-	public static String dev_SL_APPLICATIONS = "/html/body/div[3]/div[3]/div/div[1]/div/div[2]/a[2]";
-	public static String dev_SL_VIEWAPPLICATIONS = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div[2]/div";
+	public static String dev_SL_APPLICATIONS = "/html/body/div[3]/div[3]/div/div[1]/div/div[1]/a[2]";
+	public static String dev_SL_VIEWAPPLICATIONS = "/html/body/div[3]/div[3]/div/div[1]/div/div[1]/a[2]";
 	public static String dev_SL_APPLICATION_STATHISTORY = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div[2]/div/student-application/form/div/div[2]/div[2]/div/a";
 	public static String dev_SL_APPLICATION_STATHISTORY2 = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div[2]/div/student-application/form/div/div[3]/div[2]/div/a";
 	public static String dev_SL_APPLICATION_STATHISTORY3 = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div[2]/div/student-application/form/div/div[4]/div[2]/div/a";

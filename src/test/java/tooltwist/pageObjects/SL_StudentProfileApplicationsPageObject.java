@@ -1,6 +1,7 @@
 package tooltwist.pageObjects;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +23,9 @@ public class SL_StudentProfileApplicationsPageObject extends ObjectReference {
 	}
 
 	public void visitApplications() throws InterruptedException {
-		elementUtil.isClickedElementAvailable(dev_SL_APPLICATIONS);
+		logger.info("Starting to click Applications tab");
+		driver.findElement(By.xpath(dev_SL_APPLICATIONS)).click();
+//		elementUtil.isClickedElementAvailable(dev_SL_APPLICATIONS);
 		Thread.sleep(2000);
 		logger.info("Applications tab clicked.");
 		
