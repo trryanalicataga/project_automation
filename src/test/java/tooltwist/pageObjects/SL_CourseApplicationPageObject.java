@@ -172,7 +172,7 @@ public class SL_CourseApplicationPageObject extends ObjectReference {
 		logger.info("Phone Number is available. Entering values now...");
 		WebElement promo123 = driver.findElement(By.xpath(dev_SL_PROFILE_EMAILADDRESSc));
 		promo123.clear();
-		promo123.sendKeys("ryanstudent4@yopmail.com");
+		promo123.sendKeys("ryanstudent5@yopmail.com");
 		//add exception catcher, something like add '1' to email when it's already existing
 		
 		

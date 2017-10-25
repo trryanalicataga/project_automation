@@ -133,4 +133,25 @@ public class ObjectReference {
 	public static String dev_SL_AGENTSELECTION = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[1]/div/input";
 	public static String dev_SL_PROCEED = "//*[@id='agent-selection-tpl-container']/div[4]/div[2]/button";
 	public static String dev_SL_SUCCESSAPPLY = "/html/body/div[3]/div[3]/table/tbody/tr/td/div/h1";
+
+	//GLOBAL STUDY PARTNERS
+	
+	//footer
+	public static String dev_GSP_FOOTER = "/html/body/div[3]/div[10]/table/tbody/tr[2]/td/div/div[1]/div[2]/table/tbody/tr[3]/td/table/tbody/tr/td/span/p/span";
+
+	//splash
+	public static String dev_GSP_SPLASH = "//*[@id='dialogContent_61']/div/div[2]/div[3]/div[3]";
+	
+	//login
+	public static String dev_GSP_USERNAME = "//*[@id='loginPage-form']/div[1]/div/div/div[1]/input";
+	public static String dev_GSP_PASSWORD = "//*[@id='loginPage-form']/div[2]/div/div/div[1]/input";
+	public static String dev_GSP_LOGINBUTTON = "//*[@id='loginPage-form']/div[3]/button";
+
+	//list of applications
+	public static String dev_GSP_STATUSSELECTOR = "//*[@id='list-external-filter-active-inactive']";
+	public static String dev_GSP_CLICKER = "/html/body/div[3]/div[3]/div/div[2]/table/tbody/tr[1]/td/table/tbody/tr[1]/td/span/h1/span";
+	public static String dev_GSP_CONDITIONALLYAPPROVE = "//*[@id='become-a-partner-list-tpl-container']/tr[1]/td[10]/div/table/tbody/tr/td/button[3]";
+	public static String dev_GSP_CAPPROVEREASON = "/html/body/div[6]/div/div/div[2]/div/form/div/div/div/div/input";
+	public static String dev_GSP_CAPPROVEBUTTON = "/html/body/div[6]/div/div/div[3]/button[2]";
+	public static String dev_GSP_CAPPROVESUCCESS = "/html/body/div[6]/div/div/div[1]/div";
 }
