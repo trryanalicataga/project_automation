@@ -1,5 +1,8 @@
 package tooltwist.pageObjects;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -37,17 +40,16 @@ public class SL_CourseApplicationPageObject extends ObjectReference {
 		elementUtil.isClickedElementAvailable(dev_SL_PROCEED);
 		
 		elementUtil.isClickedElementAvailable(dev_SL_CONTACT_DETAILS);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		elementUtil.isClickedElementAvailable(dev_SL_PASSPORT_DETAILS);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		elementUtil.isClickedElementAvailable(dev_SL_ACADEMIC_DETAILS);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		elementUtil.isClickedElementAvailable(dev_SL_PROFESSIONAL_DETAILS);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		elementUtil.isClickedElementAvailable(dev_SL_DECLARATION);
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
-		Thread.sleep(5000);
 		Assert.assertTrue("UNAVAILABLE First Name field TEST EDIT",elementUtil.isElementAvailabe(dev_SL_PROFILE_FIRSTNAMEc));
 		logger.info("First Name field is available. Entering values now...");
 		WebElement promo = driver.findElement(By.xpath(dev_SL_PROFILE_FIRSTNAMEc));
@@ -170,7 +172,7 @@ public class SL_CourseApplicationPageObject extends ObjectReference {
 		logger.info("Phone Number is available. Entering values now...");
 		WebElement promo123 = driver.findElement(By.xpath(dev_SL_PROFILE_EMAILADDRESSc));
 		promo123.clear();
-		promo123.sendKeys("trabahulala@yopmail.com");
+		promo123.sendKeys("ryanstudent@yopmail.com");
 		
 		
 		
@@ -231,7 +233,12 @@ public class SL_CourseApplicationPageObject extends ObjectReference {
 		logger.info("First Name field is available. Entering values now...");
 		WebElement promoZY = driver.findElement(By.xpath(dev_SL_PROFILE_DATEDECLARATIONc));
 		promoZY.clear();
-		promoZY.sendKeys("2017-10-24");
+		
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = new Date();
+		System.out.println(dateFormat.format(date));
+		String x = dateFormat.format(date);
+		promoZY.sendKeys(x);
 		
 		Thread.sleep(3000);
 
@@ -240,6 +247,20 @@ public class SL_CourseApplicationPageObject extends ObjectReference {
 		String url = driver.getCurrentUrl();
 		Assert.assertTrue("Successful apply", url!=("https://dev.studylane.com.au/successfully-submitted"));
 		logger.info("Passed course apply");
+		
+		Assert.assertTrue("Course apply failed",elementUtil.isElementAvailabe(dev_SL_PROFILE_SUCCESS_UPDATE));
+		logger.info("Course apply has been successful.");
+		
+		String reportName = elementUtil.getValue(By.xpath(dev_SL_SUCCESSAPPLY));
+		String report = "Thank you for your application!";
+		
+		Assert.assertTrue("Course apply failed " + reportName, reportName.equals(report));
+		Boolean truth = reportName == report;
+		if (truth == true) {
+			logger.info("Course apply success");
+		} else {
+			logger.info("Course apply failed");
+		}
 		
 //		Select oSelect = new Select(driver.findElement(By.xpath(dev_SL_PROFILE_NATIONALITY)));
 //		oSelect.selectByVisibleText("Canada");

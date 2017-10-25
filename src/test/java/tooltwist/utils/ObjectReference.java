@@ -132,4 +132,5 @@ public class ObjectReference {
 	//dev_agent_selection_process
 	public static String dev_SL_AGENTSELECTION = "//*[@id='DataTables_Table_0']/tbody/tr[1]/td[1]/div/input";
 	public static String dev_SL_PROCEED = "//*[@id='agent-selection-tpl-container']/div[4]/div[2]/button";
+	public static String dev_SL_SUCCESSAPPLY = "/html/body/div[3]/div[3]/table/tbody/tr/td/div/h1";
 }
