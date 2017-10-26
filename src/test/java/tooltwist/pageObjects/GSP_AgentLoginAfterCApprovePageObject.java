@@ -1,6 +1,8 @@
 package tooltwist.pageObjects;
 
 
+import java.util.Timer;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -63,8 +65,19 @@ public class GSP_AgentLoginAfterCApprovePageObject extends ObjectReference {
 		//dev_GSP_PROGRESSTRACKER
 		
 	}
+	
+	static int interval;
+	static Timer timer;
 
 	public void sendRequiredDocs() throws InterruptedException {
+//		
+//		int delay = 1000;
+//		int period = 1000;
+//		timer = new Timer();
+//		interval = 60;
+//		System.out.println(60);
+//		timer.scheduleAtFixedRate(new TimerTask() {
+//		
 		
 		driver.findElement(By.xpath(dev_GSP_DOCUMENTTRACKER)).click();
 		logger.info("Complete required documents now, 60 seconds.");

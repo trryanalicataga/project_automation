@@ -154,6 +154,31 @@ public class ObjectReference {
 	public static String dev_GSP_CAPPROVEREASON = "/html/body/div[6]/div/div/div[2]/div/form/div/div/div/div/input";
 	public static String dev_GSP_CAPPROVEBUTTON = "/html/body/div[6]/div/div/div[3]/button[2]";
 	public static String dev_GSP_CAPPROVESUCCESS = "/html/body/div[6]/div/div/div[1]/div";
+	public static String dev_GSP_APPROVEBUTTON = "//*[@id='become-a-partner-list-tpl-container']/tr[1]/td[10]/div/table/tbody/tr/td/button[4]";
+	public static String dev_GSP_QAVERIFIEDOKBTN = "/html/body/div[6]/div/div/div[2]/button[2]";
+	
+	//QA Verified Buttons
+	public static String dev_GSP_QAV1 = "//*[@id='become-a-partner-company-profile']/table/tbody/tr[6]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV2 = "//*[@id='become-a-partner-company-profile']/table/tbody/tr[15]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV3 = "//*[@id='become-a-partner-company-profile']/table/tbody/tr[23]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_COMPANYSPECIFICSTAB = "//*[@id='become-a-partner-company-specifics-tab']/a";
+	public static String dev_GSP_QAV4 = "//*[@id='become-a-partner-company-specifics']/table/tbody/tr[8]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_STUDENTDATATAB = "//*[@id='become-a-partner-student-data-tab']/a";
+	public static String dev_GSP_QAV5 = "//*[@id='become-a-partner-student-data']/table/tbody/tr[4]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV55 = "//*[@id='become-a-partner-student-data']/table/tbody/tr[3]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV6 = "//*[@id='become-a-partner-student-data']/table/tbody/tr[12]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV66 = "//*[@id='become-a-partner-student-data']/table/tbody/tr[11]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV7 = "//*[@id='become-a-partner-student-data']/table/tbody/tr[21]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV77 = "//*[@id='become-a-partner-student-data']/table/tbody/tr[17]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_STUDENTSERVICESTAB = "//*[@id='become-a-partner-student-services-tab']/a";
+	public static String dev_GSP_QAV8 = "//*[@id='become-a-partner-student-services']/table/tbody/tr[28]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV88 = "//*[@id='become-a-partner-due-diligence-and-submission']/table/tbody/tr[12]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_DUEDILIGENCEANDSUBMISSIONTAB = "//*[@id='become-a-partner-due-diligence-and-submission-tab']/a";
+	public static String dev_GSP_QAV9 = "//*[@id='become-a-partner-due-diligence-and-submission']/table/tbody/tr[20]/td/div/div[2]/div/input[1]";
+	public static String FINALAPPROVE = "/html/body/div[3]/div[3]/div/div[2]/table/tbody/tr[4]/td/div/div[2]/div/div[6]/button[3]";
+	public static String FAAPPROVEREASON = "/html/body/div[6]/div/div/div[2]/div/form/div/div/div/div/input";
+	public static String FAPPROVEOKBTN = "/html/body/div[6]/div/div/div[3]/button[2]";
+	public static String SUCCESSAPPROVED = "/html/body/div[6]";
 	
 	//CA'd agent landing page
 	public static String dev_GSP_DASHBOARDBTN = "/html/body/div[3]/div[3]/div/div[1]/div/div[1]/a[1]";
@@ -165,5 +190,5 @@ public class ObjectReference {
 	public static String dev_GSP_SENDAPPLICATION = "//*[@id='submit-button']";
 	public static String dev_GSP_APPLICATIONSENT = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div[3]/div";
 	public static String dev_GSP_PROMPTOK = "/html/body/div[17]/div/div/div[2]/button";
-
+	
 }
