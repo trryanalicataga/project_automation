@@ -26,7 +26,7 @@ public class GSP_AdminLoginPageObject extends ObjectReference {
 
 	public void startLogin() throws InterruptedException {
 		
-		driver.get("https://www.globalstudypartners.com/login");
+		driver.get("https://dev.globalstudypartners.com/login");
 		Assert.assertTrue("Email field is not available", elementUtil.isElementAvailabe(dev_GSP_USERNAME));
 		WebElement promo = driver.findElement(By.xpath(dev_GSP_USERNAME));
 		promo.sendKeys("globalstudypartners.test@gmail.com");

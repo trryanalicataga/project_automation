@@ -154,4 +154,16 @@ public class ObjectReference {
 	public static String dev_GSP_CAPPROVEREASON = "/html/body/div[6]/div/div/div[2]/div/form/div/div/div/div/input";
 	public static String dev_GSP_CAPPROVEBUTTON = "/html/body/div[6]/div/div/div[3]/button[2]";
 	public static String dev_GSP_CAPPROVESUCCESS = "/html/body/div[6]/div/div/div[1]/div";
+	
+	//CA'd agent landing page
+	public static String dev_GSP_DASHBOARDBTN = "/html/body/div[3]/div[3]/div/div[1]/div/div[1]/a[1]";
+	public static String dev_GSP_MYPROFILEBTN = "/html/body/div[3]/div[3]/div/div[1]/div/div[1]/a[2]";
+	public static String dev_GSP_MESSAGE = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div[1]/p";
+	public static String dev_GSP_PROGRESSTRACKER = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div[3]";
+	public static String dev_GSP_APPLICATIONPERC = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div[3]/div";
+	public static String dev_GSP_DOCUMENTTRACKER = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div[3]/div/div/a[22]/div";
+	public static String dev_GSP_SENDAPPLICATION = "//*[@id='submit-button']";
+	public static String dev_GSP_APPLICATIONSENT = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div[3]/div";
+	public static String dev_GSP_PROMPTOK = "/html/body/div[17]/div/div/div[2]/button";
+
 }
