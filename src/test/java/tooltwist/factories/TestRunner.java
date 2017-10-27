@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"features/globalstudypartnersSMOKETEST/gsp_searchCourses.feature"},
+		features = {"features/globalstudypartnersSMOKETEST/gsp_adminApproveAgent.feature"},
 		glue = {"tooltwist.stepDefinitions.regressionTest", "tooltwist.stepDefinitions.smokeTest"},
 		monochrome = true
 

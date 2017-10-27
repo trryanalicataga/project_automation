@@ -83,7 +83,7 @@ public class ObjectReference {
 	//dev_studylane_homepage
 	public static String dev_SL_SEARCHFIELD = "//*[@id='i_search_course']";
 	public static String dev_SL_SEARCHBUTTON = "//*[@id='search-form']/div[1]/div[1]/div[3]/a/button";
-	//dev_studylane_searchresults
+	//dev_studylane_searchresults                  
 	public static String dev_SL_SHORTLISTBUTTON = "/html/body/div[3]/div[2]/div/course-search-manager/div/course-search-result/div/div[2]/ul/li[1]/div[1]/div[3]/div[2]/button";
 	public static String dev_SL_SHORTLISTBUTTON1 = "/html/body/div[3]/div[2]/div/course-search-manager/div/course-search-result/div/div[2]/ul/li[2]/div[1]/div[3]/div[2]/button";
 	public static String dev_SL_SHORTLIST = "//*[@id='saved-courses-container-override']/slick/div/div/div[1]/div/div";
@@ -201,4 +201,50 @@ public class ObjectReference {
 	public static String dev_GSP_APPLICATIONSENT = "/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/div[3]/div";
 	public static String dev_GSP_PROMPTOK = "/html/body/div[17]/div/div/div[2]/button";
 	
+	//dev GSP Search Results
+	public static String dev_GSP_SHORTLISTBUTTON = "/html/body/div[3]/div[3]/div/course-search-manager/div/course-search-result/div/div[2]/ul/li[1]/div[1]/div[3]/div[2]/button";
+	public static String dev_GSP_SHORTLISTBUTTON1 = "/html/body/div[3]/div[3]/div/course-search-manager/div/course-search-result/div/div[2]/ul/li[2]/div[1]/div[3]/div[2]/button";
+	public static String dev_GSP_SHORTLIST = "//*[@id='saved-courses-container-override']/slick/div/div/div[1]/div/div";
+	public static String dev_GSP_SHORTLIST1 = "//*[@id='saved-courses-container-override']/slick/div/div/div[2]/div/div/div[2]/div";
+	public static String dev_GSP_COMPARE = "//*[@id='saved-courses-buttons-container-override']/div/div/div[1]/button";
+
+	//dev GSP course apply
+	public static String dev_GSP_SCS = "/html/body/div[3]/div[3]/div/course-search-manager/div/course-search-shortlist/div/div[2]/md-toolbar/div/div/div[2]/a[2]";
+	public static String dev_GSP_SCS_APPLY = "//*[@id='saved-courses-buttons-container-override']/div/div/div[2]/button/span[1]";
+	
+	//dev_gsp_courseApplication
+	public static String dev_GSP_PROFILE_FIRSTNAMEc = "//*[@id='student-form-personal-details']/div[1]/div[1]/div/div/input[2]";
+	public static String dev_GSP_PROFILE_LASTNAMEc = "//*[@id='student-form-personal-details']/div[1]/div[2]/div/div/input";
+	public static String dev_GSP_PROFILE_DATEc = "//*[@id='student-form-personal-details']/div[2]/div";
+	public static String dev_GSP_PROFILE_GENDERc = "//*[@id='student-form-personal-details']/div[3]/div/div[2]/div/input[2]";
+	public static String dev_GSP_PROFILE_DATETIMEPICKERc = "";
+	public static String dev_GSP_PROFILE_PASSPORTNUMc = "//*[@id='student-form-passport-details']/div[1]/div[1]/div/div/input";
+	public static String dev_GSP_PROFILE_PLACEOFISSUEc = "//*[@id='student-form-passport-details']/div[2]/div[1]/div/div/input";
+	public static String dev_GSP_PROFILE_DATEOFISSUEc = "//*[@id='student-form-passport-details']/div[1]/div[2]";
+	public static String dev_GSP_PROFILE_EXPIRYDATEc = "//*[@id='student-form-passport-details']/div[2]/div[2]";
+	public static String dev_GSP_PROFILE_NATIONALITYc = "//*[@id='student-form-passport-details']/div[3]/div[1]/div/div/div[1]/a";
+	public static String dev_GSP_PROFILE_PLACEOFBIRTHc = "//*[@id='student-form-passport-details']/div[3]/div[2]/div/div/input";
+	public static String dev_GSP_PROFILE_STREETADDRESS1c = "//*[@id='student-form-contact-details']/div[1]/div/div/div/input";
+	public static String dev_GSP_PROFILE_STREETADDRESS2c = "//*[@id='student-form-contact-details']/div[2]/div/div/div/input";
+	public static String dev_GSP_PROFILE_CITYc = "//*[@id='student-form-contact-details']/div[3]/div[1]/div/div/input";
+	public static String dev_GSP_PROFILE_STATEPROVREGIONc = "//*[@id='student-form-contact-details']/div[3]/div[2]/div/div/input";
+	public static String dev_GSP_PROFILE_POSTALZIPCODEc = "//*[@id='student-form-contact-details']/div[4]/div[1]/div/div/input";
+	public static String dev_GSP_PROFILE_COUNTRYc = "//*[@id='student-form-contact-details']/div[4]/div[2]/div/div/div[1]/a";
+	public static String dev_GSP_PROFILE_PHONENUMBERc = "//*[@id='student-form-contact-details']/div[5]/div[1]/div/div/input";
+	public static String dev_GSP_PROFILE_TRAVELALONEc = "//*[@id='student-form-contact-details']/div[7]/div/div[1]/div/div/div/label[1]/input"; 
+	public static String dev_GSP_PROFILE_MOSTRECENTLEVELEDUCc = "//*[@id='student-form-base-academic-details']/div[3]/div[1]/div[1]/div/div[1]/div[1]/label/input";//*[@id="radio_27"]
+	public static String dev_GSP_PROFILE_MOSTRECENTPROGRAMc = "//*[@id='student-form-base-academic-details']/div[1]/div/div[1]/div[2]/div/input[1]";
+	public static String dev_GSP_PROFILE_YEARCOMPLETEDc = "//*[@id='student-form-base-academic-details']/div[4]/div/div/div/select";
+	public static String dev_GSP_PROFILE_WORKEDAFTERSTUDIESc = "//*[@id='student-employment-details']/div[1]/div/div[1]/div[2]/div/label[2]/input";
+	public static String dev_GSP_PROFILE_ICONFIRMc = "//*[@id='agent-declaration-details']/div[2]/div[1]/div/div[1]/input";
+	public static String dev_GSP_PROFILE_FULLNAMEc = "//*[@id='agent-declaration-details']/div[2]/div[2]/div/div/input";
+	public static String dev_GSP_PROFILE_DATEDECLARATIONc = "//*[@id='agent-declaration-details']/div[2]/div[3]/div/div/input";
+	public static String dev_GSP_PROFILE_SUCCESS_SUBMITc = "//*[@id='submit-button']";
+	public static String dev_GSP_PROFILE_EMAILADDRESSc = "//*[@id='student-form-contact-details']/div[5]/div[2]/div/div/input";
+		//dev_courseApplicationAccordion
+	public static String dev_GSP_CONTACT_DETAILS = "/html/body/div[3]/div[3]/div/div/table/tbody/tr/td/div/div[4]/form/div[3]/div[1]/div/div[1]/span";
+	public static String dev_GSP_PASSPORT_DETAILS = "/html/body/div[3]/div[3]/div/div/table/tbody/tr/td/div/div[4]/form/div[2]/div[1]/div/div[1]/span";
+	public static String dev_GSP_ACADEMIC_DETAILS = "/html/body/div[3]/div[3]/div/div/table/tbody/tr/td/div/div[4]/form/div[4]";
+	public static String dev_GSP_PROFESSIONAL_DETAILS = "/html/body/div[3]/div[3]/div/div/table/tbody/tr/td/div/div[4]/form/div[5]";
+	public static String dev_GSP_DECLARATION = "/html/body/div[3]/div[3]/div/div/table/tbody/tr/td/div/div[4]/form/div[6]";
 }

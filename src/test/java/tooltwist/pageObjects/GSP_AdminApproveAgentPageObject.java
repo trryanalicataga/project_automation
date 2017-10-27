@@ -1,5 +1,7 @@
 package tooltwist.pageObjects;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -63,8 +65,21 @@ public class GSP_AdminApproveAgentPageObject extends ObjectReference {
 		
 		Thread.sleep(1000);
 		
+//		
+		
 		driver.findElement(By.xpath(dev_GSP_QAVERIFIEDOKBTN)).click();
 		Thread.sleep(1000);
+
+		int x = driver.findElements(By.cssSelector("#become-a-partner-company-profile input[type=radio][value=true]")).size();
+		System.out.println("Number of element : " + x);
+		
+		
+		
+//		List<WebElement> webelements = driver.findElements(By.xpath(".//input[@type='radio'][./following-sibling::*[contains(., 'Yes')]]"));
+//		List<WebElement> webelements = driver.findElements(By.cssSelector("#become-a-partner-company-profile input[type=radio][value=true]"));
+//		for(WebElement webelement : webelements){
+//			webelement.click();
+//		}
 
 		
 		driver.findElement(By.xpath(dev_GSP_QAV1)).click();
