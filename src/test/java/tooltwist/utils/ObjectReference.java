@@ -136,6 +136,13 @@ public class ObjectReference {
 
 	//GLOBAL STUDY PARTNERS
 	
+	//header
+	public static String dev_GSP_HEADER_LOGIN = "/html/body/div[3]/table/tbody/tr[8]/td/div/div[1]/table/tbody/tr[6]/td/div/table/tbody/tr[3]/td[2]/table/tbody/tr/td[5]/div/div[3]";
+	
+	//homepage
+	public static String dev_GSP_SEARCHBOX_SEARCHFIELD = "//*[@id='i_search_course']";
+	public static String dev_GSP_SEARCHBOX_SEARCHBUTTON = "//*[@id='search-form']/div[1]/div[1]/div[3]/a/button";
+	
 	//footer
 	public static String dev_GSP_FOOTER = "/html/body/div[3]/div[10]/table/tbody/tr[2]/td/div/div[1]/div[2]/table/tbody/tr[3]/td/table/tbody/tr/td/span/p/span";
 
@@ -154,15 +161,18 @@ public class ObjectReference {
 	public static String dev_GSP_CAPPROVEREASON = "/html/body/div[6]/div/div/div[2]/div/form/div/div/div/div/input";
 	public static String dev_GSP_CAPPROVEBUTTON = "/html/body/div[6]/div/div/div[3]/button[2]";
 	public static String dev_GSP_CAPPROVESUCCESS = "/html/body/div[6]/div/div/div[1]/div";
-	public static String dev_GSP_APPROVEBUTTON = "//*[@id='become-a-partner-list-tpl-container']/tr[1]/td[10]/div/table/tbody/tr/td/button[4]";
+	public static String dev_GSP_APPROVEBUTTON = "//*[@id='become-a-partner-list-tpl-container']/tr[1]/td[10]/div/table/tbody/tr/td/button[3]";
+	public static String dev_GSP_APPROVEBUTTON1 = "//*[@id='become-a-partner-list-tpl-container']/tr[1]/td[10]/div/table/tbody/tr/td/button[4]";
 	public static String dev_GSP_QAVERIFIEDOKBTN = "/html/body/div[6]/div/div/div[2]/button[2]";
 	
 	//QA Verified Buttons
+	public static String dev_GSP_UNIVERSALQAV = "//input[@type='radio'][./following-sibling::*[contains(., 'Yes')]]";
 	public static String dev_GSP_QAV1 = "//*[@id='become-a-partner-company-profile']/table/tbody/tr[6]/td/div/div[2]/div/input[1]";
 	public static String dev_GSP_QAV2 = "//*[@id='become-a-partner-company-profile']/table/tbody/tr[15]/td/div/div[2]/div/input[1]";
 	public static String dev_GSP_QAV3 = "//*[@id='become-a-partner-company-profile']/table/tbody/tr[23]/td/div/div[2]/div/input[1]";
 	public static String dev_GSP_COMPANYSPECIFICSTAB = "//*[@id='become-a-partner-company-specifics-tab']/a";
 	public static String dev_GSP_QAV4 = "//*[@id='become-a-partner-company-specifics']/table/tbody/tr[8]/td/div/div[2]/div/input[1]";
+	public static String dev_GSP_QAV44 = "//*[@id='become-a-partner-company-specifics']/table/tbody/tr[16]/td/div/div[2]/div/input[1]";
 	public static String dev_GSP_STUDENTDATATAB = "//*[@id='become-a-partner-student-data-tab']/a";
 	public static String dev_GSP_QAV5 = "//*[@id='become-a-partner-student-data']/table/tbody/tr[4]/td/div/div[2]/div/input[1]";
 	public static String dev_GSP_QAV55 = "//*[@id='become-a-partner-student-data']/table/tbody/tr[3]/td/div/div[2]/div/input[1]";

@@ -32,7 +32,7 @@ public class GSP_AgentLoginAfterCApprovePageObject extends ObjectReference {
 		driver.get("https://dev.globalstudypartners.com/login");
 		Assert.assertTrue("Email field is not available", elementUtil.isElementAvailabe(dev_GSP_USERNAME));
 		WebElement promo = driver.findElement(By.xpath(dev_GSP_USERNAME));
-		promo.sendKeys("qweqwe@yopmail.com");
+		promo.sendKeys("neverbeentouched@yopmail.com");
 		//type in field, type password
 		Assert.assertTrue("Password field is not available", elementUtil.isElementAvailabe(dev_GSP_PASSWORD));
 		WebElement promo1 = driver.findElement(By.xpath(dev_GSP_PASSWORD));

@@ -32,16 +32,41 @@ public class GSP_AdminApproveAgentPageObject extends ObjectReference {
 		WebElement promowz = driver.findElement(By.xpath(dev_GSP_STATUSSELECTOR));
 		promowz.sendKeys("c");
 		Thread.sleep(1000);
+//		promowz.sendKeys("c");
+//		Thread.sleep(1000);
 		driver.findElement(By.xpath(dev_GSP_STATUSSELECTOR)).click();
 		
 	}
 
 	public void startApprove1() throws InterruptedException {
 	
-		driver.findElement(By.xpath(dev_GSP_APPROVEBUTTON)).click();
+		driver.findElement(By.xpath(dev_GSP_APPROVEBUTTON1)).click();
+		
+//		Thread.sleep(1000);
+		
+//		try {
+//			
+//			try {
+//				driver.findElement(By.xpath(dev_GSP_APPROVEBUTTON1)).click();
+//				logger.info("Alternative Approve button clicked.");
+//				
+//			} catch(NoSuchElementException | StaleElementReferenceException e) {
+//			    logger.info("Impossible to click alternative approve button, trying the alternative option...");
+//			}
+//			
+//			driver.findElement(By.xpath(dev_GSP_APPROVEBUTTON)).click();
+//			logger.info("Approve button clicked.");
+//			
+//		} catch(NoSuchElementException | StaleElementReferenceException e) {
+//		    logger.info("Impossible to click Approve button, trying the alternative option...");
+//		}
+		
 		Thread.sleep(1000);
+		
 		driver.findElement(By.xpath(dev_GSP_QAVERIFIEDOKBTN)).click();
 		Thread.sleep(1000);
+
+		
 		driver.findElement(By.xpath(dev_GSP_QAV1)).click();
 		logger.info("QAV 1 button clicked.");
 		Thread.sleep(3000);
@@ -56,61 +81,92 @@ public class GSP_AdminApproveAgentPageObject extends ObjectReference {
 		driver.findElement(By.xpath(dev_GSP_QAV4)).click();
 		logger.info("QAV 4 button clicked.");
 		Thread.sleep(3000);
+		
+//		try {
+//			
+//			try {
+//				driver.findElement(By.xpath(dev_GSP_QAV44)).click();
+//				logger.info("QAV 44 button clicked.");
+//				
+//			} catch(NoSuchElementException | StaleElementReferenceException e) {
+//			    logger.info("Impossible to click QAV 44, trying the alternative option...");
+//			}
+//			
+//			driver.findElement(By.xpath(dev_GSP_QAV4)).click();
+//			logger.info("QAV 4 button clicked.");
+//			
+//		} catch(NoSuchElementException | StaleElementReferenceException e) {
+//		    logger.info("Impossible to click QAV 4, trying the alternative option...");
+//		}
+//
+//
+//		Thread.sleep(3000);
+		
 		driver.findElement(By.xpath(dev_GSP_STUDENTDATATAB)).click();
 		Thread.sleep(3000);
 		
-		try {
-			driver.findElement(By.xpath(dev_GSP_QAV5)).click();
-			logger.info("QAV 5 button clicked.");
-			
-		} catch(NoSuchElementException | StaleElementReferenceException e) {
-		    logger.info("Impossible to click QAV 5, trying the alternative option...");
-		}
-
+		driver.findElement(By.xpath(dev_GSP_QAV55)).click();
+		logger.info("Alternative QAV 5 button clicked.");
 		Thread.sleep(3000);
 		
-		try {
-			driver.findElement(By.xpath(dev_GSP_QAV55)).click();
-			logger.info("Alternative QAV 5 button clicked.");
-		} catch(NoSuchElementException | StaleElementReferenceException e) {
-		    logger.info("Impossible to click alternative QAV 5. GG");
-		}
-
+//		try {
+//			
+//			try {
+//				driver.findElement(By.xpath(dev_GSP_QAV55)).click();
+//				logger.info("Alternative QAV 5 button clicked.");
+//			} catch(NoSuchElementException | StaleElementReferenceException e) {
+//			    logger.info("Impossible to click alternative QAV 5. GG");
+//			}
+//			
+//			driver.findElement(By.xpath(dev_GSP_QAV5)).click();
+//			logger.info("QAV 5 button clicked.");
+//			
+//		} catch(NoSuchElementException | StaleElementReferenceException e) {
+//		    logger.info("Impossible to click QAV 5, trying the alternative option...");
+//		}
+//
+//		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath(dev_GSP_QAV66)).click();
+		logger.info("Alternative QAV 6 button clicked.");
 		Thread.sleep(3000);
 		
-		try {
-			driver.findElement(By.xpath(dev_GSP_QAV6)).click();
-			logger.info("QAV 6 button clicked, trying the alternative option...");
-		} catch(NoSuchElementException | StaleElementReferenceException e) {
-		    logger.info("Impossible to click QAV 6");
-		}
+//		try {
+//			
+//			try {
+//				driver.findElement(By.xpath(dev_GSP_QAV66)).click();
+//				logger.info("Alternative QAV 6 button clicked.");
+//			} catch(NoSuchElementException | StaleElementReferenceException e) {
+//			    logger.info("Impossible to click QAV 6. GG");
+//			}
+//			
+//			driver.findElement(By.xpath(dev_GSP_QAV6)).click();
+//			logger.info("QAV 6 button clicked, trying the alternative option...");
+//		} catch(NoSuchElementException | StaleElementReferenceException e) {
+//		    logger.info("Impossible to click QAV 6");
+//		}
 		
-		try {
-			driver.findElement(By.xpath(dev_GSP_QAV66)).click();
-			logger.info("Alternative QAV 6 button clicked.");
-		} catch(NoSuchElementException | StaleElementReferenceException e) {
-		    logger.info("Impossible to click QAV 6. GG");
-		}
 		
+		driver.findElement(By.xpath(dev_GSP_QAV77)).click();
+		logger.info("Alternative QAV 7 button clicked.");
 		Thread.sleep(3000);
 		
-		try {
-			driver.findElement(By.xpath(dev_GSP_QAV7)).click();
-			logger.info("QAV 7 button clicked.");
-		} catch(NoSuchElementException | StaleElementReferenceException e) {
-		    logger.info("Impossible to click QAV 7, trying the alternative option.");
-		}
+//		try {
+//			
+//			try {
+//				driver.findElement(By.xpath(dev_GSP_QAV77)).click();
+//				logger.info("Alternative QAV 7 button clicked.");
+//			} catch(NoSuchElementException | StaleElementReferenceException e) {
+//			    logger.info("Impossible to click alternative QAV 7. GG.");
+//			}
+//			
+//			driver.findElement(By.xpath(dev_GSP_QAV7)).click();
+//			logger.info("QAV 7 button clicked.");
+//		} catch(NoSuchElementException | StaleElementReferenceException e) {
+//		    logger.info("Impossible to click QAV 7, trying the alternative option.");
+//		}
 		
-		Thread.sleep(3000);
-		
-		try {
-			driver.findElement(By.xpath(dev_GSP_QAV77)).click();
-			logger.info("Alternative QAV 7 button clicked.");
-		} catch(NoSuchElementException | StaleElementReferenceException e) {
-		    logger.info("Impossible to click alternative QAV 7. GG.");
-		}
-		
-		Thread.sleep(3000);
+	
 		
 		driver.findElement(By.xpath(dev_GSP_STUDENTSERVICESTAB)).click();
 		Thread.sleep(3000);
